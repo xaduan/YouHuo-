@@ -2,12 +2,16 @@
 define(function(require, exports, module) {
 
   // 通过 require 引入依赖
-  var $ = require("jQuery"); 
+    var $ = require("jQuery"); 
+    var cookie = require("cookie");
+    cookie($);
     $(function(){
         new topNav();//顶部导航栏
         new wrapNav();//内容区导航
         new returnTop();//回到顶部
         new navShow();//悬浮窗显示
+        new login();
+        new miniCart();//mini购物车
     })
     //顶部导航栏
     function topNav(){
@@ -116,10 +120,103 @@ define(function(require, exports, module) {
     $.each($("area"),function(i,val){
 　　　　$(val).attr({"onfocus":"blur(this)"});
 　　})
+    /*检测是否为登录状态*/
+    function login(){
+        var _this = this;
+        var cookie = $.cookie("user");
+        if(cookie){
+             $("#topNavRight li").eq(0).html("Hi~ "+cookie+'<span class="tuichu">[退出]</span>')
+        }
+       $("#topNavRight li").eq(0).on("click",".tuichu",_this.loginyes)
+    }
+    //退出
+    login.prototype.loginyes = function(){
+        $.cookie("user", null,{path:"/",expries:1});
+        $("#topNavRight li").eq(0).html('Hi~[<a href="login.html" class="login">请登录</a>][<a href="register.html" class="register">免费注册</a>]')
+    }
     
-    
-    
-    
+    var arr=[];
+    var arr2=[];
+    var goodsNum = 0;
+    function miniCart(){
+       var _this = this;
+       var cookies = $.cookie("goodsDetails");
+       if(cookies!=""&&cookies!=null){
+           $(".goods-num-tip").show(); 
+           arr = cookies.split("#");
+           arr.pop();
+           //获取每段商品的全部信息；
+           for(var j = 0;j<arr.length;j++){
+               var a = arr[j].split("|");
+               arr2.push(a);
+           }
+          var html = "";
+           for(var i=0;i<arr2.length;i++){
+               goodsNum+=parseInt(arr2[i][3]);
+                html+='<div class="goods-item">'
+                html+='<div class="goods-img">'
+                html+='<a href="javascript:;">'
+                html+='<img src="'+arr2[i][1]+'" alt="">'
+                html+='</a>'
+                html+='</div>'
+                html+='<div class="goods-info">'
+                html+='<p class="title">'+arr2[i][0]+'</p>'
+                html+='<p>尺码：<span class="size">'+arr2[i][2]+'</span></p>'
+                html+='</div>'
+                html+='<div class="goods-price">'
+                html+='<p>'
+                html+='<span class="price">'+arr2[i][4]+'</span> x <span class="num">'+arr2[i][3]+'</span>'
+                html+='</p>'
+                html+='<p>'
+                html+='<span id="delete"><a href="javascript:;" style="color:#000;padding:2px 4px;background:#eee;">删除</a></span>'
+                html+='</p>'
+                html+='</div>'
+                html+='</div>' 
+           }
+           $(".goods-num-tip").html(goodsNum);
+           $("#goods-item").html(html);
+            console.log(arr2);
+           
+           $(".go-cart").on("click","#delete",_this.delete);  
+       }else{
+           $(".goods-num-tip").hide();
+           $(".rich-cart").hide();
+           $(".cart-null").show(); 
+       }
+        $(".go-cart").on("mouseenter",function(){
+            $(".mini-cart-wrapper").show();
+        }).on("mouseleave",function(){
+             $(".mini-cart-wrapper").hide();
+        })   
+    }  
+    miniCart.prototype.delete = function(){
+        $(this).parent().parent().parent().remove();
+        miniCart.prototype.TestingCartNull();
+        var Index = $(this).parent().parent().parent().index();
+        arr2.splice(Index,1);
+        miniCart.prototype.changeCookie();
+        goodsNum = 0;
+         for(var i=0;i<arr2.length;i++){
+             goodsNum+=parseInt(arr2[i][3]);
+         }
+       $(".goods-num-tip").html(goodsNum);
+    }
+    miniCart.prototype.TestingCartNull = function(){
+        console.log($(".go-cart").find(".goods-item").length)
+        if($(".go-cart").find(".goods-item").length == 0){
+            $(".rich-cart").hide();
+            $(".cart-null").show();
+            $(".goods-num-tip").hide();
+        } 
+    }
+    miniCart.prototype.changeCookie = function(){
+        var strCookie = "";
+        for(var i = 0;i<arr2.length;i++){
+          strCookie+=arr2[i].join("|");
+            strCookie+="#";
+        }
+        $.cookie("goodsDetails",strCookie,{path:"/",expries:1});
+    }
     
     
     

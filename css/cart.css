@@ -1,0 +1,324 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0;}
+body { background:#fff; color:#555; font-size:14px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#555; text-decoration:none; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;} 
+.clearfix:after {content: ""; display: block; height:0; clear:both; visibility: hidden;}
+body {
+    font-family: arial, SimHei
+}
+img{border:0 none;}
+@font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.eot');
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+  url('iconfont.woff') format('woff'),
+  url('iconfont.ttf') format('truetype'),
+  url('iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*footer*/
+.yoho-footer{font-size: 12px;}
+.yoho-footer * {box-sizing: border-box;}
+.left{float: left;}
+.right{float: right;}
+.yoho-footer .footerbottom {width: 100%;}
+.yoho-footer .promise {padding: 20px 0 10px;background: #000;}
+.center-content {width: 1150px;margin-left: auto;margin-right: auto;}
+.yoho-footer .promise .left {margin-right: 60px;line-height: 30px;font-size: 12px;font-weight: 700;}
+.yoho-footer .promise .left .iconfont {display: inline-block;font-weight: 400;font-size: 27px;vertical-align: middle;margin-right: 5px;}
+.yoho-footer .rgbf {color: #fff;}
+.yoho-footer .red {color: #e01;}
+.yoho-footer .subscribe {border: 1px solid #262626;width: 240px;}
+.yoho-footer .subscribe input {width: 180px;height: 32px;padding: 0 10px;line-height: 32px;border: none;margin: 0;background: #000;}
+.yoho-footer .rgb6 {color: #666;}
+.yoho-footer .subscribe a {display: block;float: right;margin-right: 20px;font-size: 20px;line-height: 28px;opacity: .5;}
+.yoho-footer .footer-help {background: #000;font-size: 12px;overflow: hidden;}
+.yoho-footer .footer-help>div {padding: 15px 0;border-top: 1px solid #262626;}
+.yoho-footer .footer-help ul {width: 110%;}
+.yoho-footer .footer-help li {width: 180px;}
+.yoho-footer .footer-help p {line-height: 24px;}
+.yoho-footer .footer-help p span {color: #fff;}
+.yoho-footer .footer-help p a {color: #666;}
+.yoho-footer .footer-link {background: #000;padding: 10px 0 30px;font-size: 12px;}
+.yoho-footer .footer-link .right-flag {margin-top: 3px;}
+.yoho-footer .footer-link .about-us {line-height: 20px;color: #666;margin-left: 10px;}
+.yoho-footer .footer-link .about-us a {color: #666;}
+.yoho-footer .footer-link .about-us span {padding: 0 10px;}
+/*回到顶部*/
+#return-top{width:60px;height:60px;position: fixed;right: 20px; text-align: center;line-height: 60px;color: #fff;bottom: 20px;cursor: pointer;z-index: 4;background: #000;opacity: .5;display: none;}
+#return-top span{font-size: 20px;}
+#return-top:hover{opacity: .8}
+/*页头*/
+.simple-header {height: 66px;margin: 0 0 20px;border-bottom: 2px solid #222;}
+.simple-header .header-inner {width: 990px;height: 100%;margin: 0 auto;}
+.simple-header .logo {float: left;line-height: 66px;font-size: 0;}
+.simple-header .logo img {vertical-align: middle;}
+.simple-header .header-tool {float: right;line-height: 66px;font-size: 0;}
+.simple-header .header-tool li, .simple-header .header-tool li a, .simple-header .header-tool li span {font-size: 12px;vertical-align: middle;}
+.simple-header .header-tool li {display: inline-block;padding: 0 10px;line-height: 28px;}
+.passport-page {margin-right: auto;margin-left: auto;width: 1150px;}
+.passport-cover {float: left;margin: 107px 0;width: 575px;}
+.passport-cover .cover-content {padding: 50px 0;width: 100%;height: 318px;border-right: 1px solid #dfdfdf;}
+.passport-cover .cover-img {display: block;margin: 0 auto;margin-top: 50px;width: 252px;height: 190px;}
+/*内容区*/
+.order-ensure-page {width: 990px;margin: 40px auto;}
+.order-ensure-page .order-edit{width:100%;position: relative;margin-bottom: 35px;}
+.order-ensure-page .order-title{position: relative;margin-bottom: 15px;margin-top: 30px;overflow:hidden;width:990px;height:33px;background: url(../images-vans/titlelogo.jpg)center;}
+.order-ensure-page .cartnew-tips {height: auto;overflow: hidden;font-size: 12px;margin-bottom: 5px;}
+.order-ensure-page .cartnew-tips .tipsbox {width: 648px;height: 23px;line-height: 18px;padding: 4px 5px 4px 10px;color: #666;background: url(../images-vans/sanjiao.png) no-repeat;position: relative;float: left;}
+.order-ensure-page .cartnew-tips .tipsbox a {width: 17px;height: 17px;padding: 0;background-image: url(../images-vans/close.jpg);background-position: -272px -221px;float: right;cursor: pointer;}
+.order-pay thead {background: #000;}
+.order-ensure-page .pay-wapper .cart-product-num {font-size: 12px;text-align: left;height: 33px;line-height: 33px;background: #f8f8f8;padding: 0 10px;position: relative;}
+.order-pay table td {border: 1px solid #ccc;padding: 10px;text-align: center;}
+caption, td, th {text-align: left;font-weight: 400;vertical-align: middle;}
+.order-pay thead th {height: 32px;line-height: 32px;color: #fff;vertical-align: middle;text-align: center;font-weight: 700;}
+.order-ensure-page .pay-wapper .cart-product-num input {position: relative;top: 2px;}
+.order-ensure-page .pay-wapper .cart-product-num {font-size: 12px;text-align: left;line-height: 33px;}
+.order-ensure-page .pay-wapper input.cart-item-check {float: left;margin-top: 25px;margin-left: 15px;}
+.order-pay .pay-pro-icon {float: left;width: 60px;height: 60px;display: block;position: relative;}
+.order-pay .pay-pro-icon img{width:auto;height:60px;}
+.order-ensure-page .pay-wapper .pay-pro-info {padding-left: 15px;padding-top: 10px;margin-left: 0;float: left;}
+.order-ensure-page .pay-wapper .pay-pro-info a {width: 200px;}
+.order-pay .pay-pro-info a {color: #1992b2;text-decoration: none;display: block;}
+
+.order-ensure-page .pay-wapper .adjust-cart-num span {display: inline-block;width: 11px;line-height: 11px;text-align: center;cursor: pointer;font-size: 10px;border:1px solid #ccc;}
+
+.order-ensure-page .pay-wapper .adjust-cart-num input {width: 30px;margin: 0 5px;text-align: center;}
+
+.order-ensure-page .pay-wapper .cart-del-btn{height: 22px;line-height: 22px;padding: 0 10px;display: inline-block;cursor: pointer;color: #666;position: relative;border:1px solid #ccc;border-radius: 3px;box-shadow: 0px 0px 5px #eee;}
+
+.order-ensure-page .salesPromotion {width: 990px;height: 36px;border-bottom: 1px solid #ccc; font-size: 12px;display: none;}
+
+.order-ensure-page .salesPromotion p {width: 800px;height: 36px;line-height: 36px;float: left;padding: 0 10px;}
+
+.order-ensure-page .salesPromotion p b {margin-right: 5px;background: #6c6c6c;border-radius: 4px;padding: 1px 5px;color: #fff;}
+
+.order-ensure-page .salesPromotion span {width: 150px;height: 36px;padding: 0 10px;line-height: 36px;float: right;text-align: right;position: relative;}
+.order-ensure-page .salesPromotion span i{font-size: 13px;}
+
+.order-ensure-page .cartnew-sum { background: #efefef; border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; zoom: 1; margin-top: 20px; height: auto; overflow: hidden; font-size: 12px;}
+
+.order-ensure-page .cartnew-sum .left {float: left;}
+.order-ensure-page .cartnew-sum .left a {color: #333;margin-left: 20px;}
+.order-ensure-page .cartnew-sum .right {float: right;text-align: right;}
+.order-ensure-page .cartnew-sum .right strong { color: #e8044f;font-size: 18px;}
+
+.order-ensure-page .cartnew-submit {padding: 10px 0 40px;text-align: right;position: relative;}
+.order-ensure-page .cartnew-submit .again,.order-ensure-page .cartnew-submit .pay{padding: 10px 30px;color: #333;display: inline-block;border-radius: 5px;}
+.order-ensure-page .cartnew-submit .again{background: #eee;box-shadow: 0 0 3px #666;float: left;border:1px solid #ccc;}
+.order-ensure-page .cartnew-submit .pay{background: #e8044f;color:#fff; box-shadow: 0 0 3px #d60248;border:1px solid red;float: right;}
+
+
+
+/*第一个提示*/
+.yoho-dialog {position: fixed;padding: 20px;height: 178px;width: 350px;background: #f8f8f8;z-index: 12;border: 5px solid rgba(0,0,0,.38);top:0;left:0;right:0;bottom:0;margin:auto;display: none;}
+.yoho-dialog .close {position: absolute;top: 5px;right: 12px;cursor: pointer;font-size: 25px;}
+
+.yoho-dialog.confirm-dialog .content {width: 350px;height: auto; min-height: 90px; overflow: hidden;line-height: 20px;position: relative;padding-top: 40px;padding-bottom: 20px;}
+
+.yoho-dialog.confirm-dialog .content div {position: absolute;top: 0;left: 100px;padding-top: 30px;font-size: 22px;font-weight: 700;width: 150px;height: 30px;line-height: 30px;margin: 0 auto;}
+
+ .content .remove span {background-image: url(../images-vans/dustbin.jpg);float: left;width: 27px;height: 30px; display: inline-block}
+
+.yoho-dialog.confirm-dialog .content p {position: absolute;left: 0;top: 55px;width: 100%;color: #444;line-height: 25px;font-size: 16px;text-align: center;margin-top: 25px;}
+.yoho-dialog .btns .confirm-sure,.yoho-dialog .btns .confirm-cancel{display: inline-block;width: 56px;height: 26px;line-height: 26px;text-align: center;border: 1px solid #000;cursor: pointer;margin-left: 30px;}
+.yoho-dialog .btns{margin-left: 64px;}
+.yoho-dialog .btns .confirm-sure{background: #000;color:#fff;}
+/*第二个提示*/
+.yoho-dialog2 {position: fixed;padding: 20px;height: 178px;width: 350px;background: #f8f8f8;z-index: 12;border: 5px solid rgba(0,0,0,.38);top:0;left:0;right:0;bottom:0;margin:auto;display: none;}
+.yoho-dialog2 .close {position: absolute;top: 5px;right: 12px;cursor: pointer;font-size: 25px;}
+
+.yoho-dialog2 .content {width: 350px;height: auto; min-height: 90px; overflow: hidden;line-height: 20px;position: relative;padding-top: 40px;padding-bottom: 20px;}
+
+.yoho-dialog2 .content div {position: absolute;top: 0;left: 100px;padding-top: 30px;font-size: 22px;font-weight: 700;width: 150px;height: 30px;line-height: 30px;margin: 0 auto;}
+
+.yoho-dialog2 .content p {position: absolute;left: 0;top: 55px;width: 100%;color: #444;line-height: 25px;font-size: 16px;text-align: center;margin-top: 25px;}
+.yoho-dialog2 .btns .confirm-sure,.yoho-dialog2 .btns .confirm-cancel{display: inline-block;width: 56px;height: 26px;line-height: 26px;text-align: center;border: 1px solid #000;cursor: pointer;margin-left: 30px;}
+.yoho-dialog2 .btns{margin-left: 64px;}
+.yoho-dialog2 .btns .confirm-sure{background: #000;color:#fff;}
+/*为您优选*/
+.order-ensure-page .cartnew-goodslist {
+    margin-bottom: 10px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+}
+.order-ensure-page .cartnew-goodslist .title {
+    height: 20px;
+    padding: 8px 10px;
+    background: #efefef;
+}
+.order-ensure-page .cartnew-goodslist .title h2 {
+    height: 20px;
+    line-height: 24px;
+    overflow: hidden;
+    font-size: 12px;
+    float: left;
+    cursor: pointer;
+}
+.order-ensure-page .cartnew-goodslist .title h2 .icon-minus {
+    background-image: url(../images-vans/sprite.cart.png);
+    background-position: -323px -225px;
+}
+.order-ensure-page .cartnew-goodslist .title h2 .icon-add {
+    background-image: url(../images-vans/sprite.cart.png);
+    background-position: -339px -225px;
+}
+.order-ensure-page .cartnew-goodslist .title h2 i {
+    width: 15px;
+    height: 15px;
+    float: left;
+    position: relative;
+    top: 4px;
+    margin-right: 5px;
+}
+.order-ensure-page .none {
+    display: none;
+}
+.order-ensure-page .cartnew-goodslist .right {
+    float: right;
+}
+.order-ensure-page .cartnew-goodslist .right .pageprev {
+    background-image: url(../images-vans/sprite.cart.png);
+    background-position: -191px -225px;
+}
+.order-ensure-page .cartnew-goodslist .right span {
+    width: 28px;
+    height: 22px;
+    display: inline-block;
+}
+.order-ensure-page .cartnew-goodslist .right span {
+    width: 28px;
+    height: 22px;
+    display: inline-block;
+}
+.order-ensure-page .cartnew-goodslist .right .pagenext {
+    background-image: url(../images-vans/sprite.cart.png);
+    background-position: -221px -225px;
+}
+
+.order-ensure-page .cartnew-goodslist .main {
+    height: 230px;
+    border-top: 1px solid #e3e3e3;
+    display: block;
+}
+.order-ensure-page .cartnew-goodslist .main ul {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+.order-ensure-page .cartnew-goodslist .main li {
+    width: 16.6667%;
+    box-sizing: border-box;
+    height: 230px;
+    border-right: 1px solid #e3e3e3;
+    float: left;
+}
+.order-ensure-page .cartnew-goodslist .main .list {
+    width: 102px;
+    padding: 10px 0 0;
+    margin: 0 auto;
+}
+.order-ensure-page .cartnew-goodslist .main .thumb {
+    height: 110px;
+}
+.order-ensure-page .cartnew-goodslist .main .thumb img {
+    display: block;
+    margin: 0 auto;
+    height:110px;
+    width:auto;
+}
+.order-ensure-page .cartnew-goodslist .main .name {
+    height: 35px;
+    overflow: hidden;
+    font-size: 12px;
+}
+.order-ensure-page .cartnew-goodslist .main .name a {
+    color: #333;
+    text-decoration: underline;
+}
+.order-ensure-page .cartnew-goodslist .main .name h3 {
+    height: 30px;
+    line-height: 15px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    cursor: pointer;
+    overflow: hidden;
+}
+.order-ensure-page .cartnew-goodslist .main .price {
+    color: #333;
+    height: 25px;
+    line-height: 25px;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    font-size: 12px;
+}
+.order-ensure-page .cartnew-goodslist .main .op {
+    text-align: center;
+    padding: 0 0 5px;
+}
+.order-ensure-page .cartnew-goodslist .main .btn_view_s {
+    width: 100px;
+    height: 22px;
+    background-image: url(../images-vans/sprite.cart.png);
+    background-position: 0 -248px;
+    display: inline-block;
+    border: 0;
+}
+.order-ensure-page .pay-wapper .pre-sell-box .cart-empty {
+    border: none;
+    padding: 100px 0 100px 260px;
+    background: url(../images-vans/cart_empty.gif) 200px 56px no-repeat;
+}
+.order-pay table {
+    width: 100%;
+}
+.order-ensure-page .pay-wapper .pre-sell-box .cart-empty a {
+    display: inline-block;
+    width: 90px;
+    height: 35px;
+    background-image: url(../images-vans/sprite.cart.png);
+    background-position: -237px -141px;
+    overflow: hidden;
+    color: #666;
+    line-height: 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

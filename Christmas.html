@@ -21,7 +21,7 @@
                 </ul>
             </div>
             <ul id="topNavRight">
-                <li>Hi~[<a href="javascript:;" class="login">请登录</a>][<a href="#" class="register">免费注册</a>]</li>
+                <li>Hi~[<a href="login.html" class="login">请登录</a>][<a href="register.html" class="register">免费注册</a>]</li>
                 <li class="hoverBg">MY有货<span class="iconfont"> &#xe6ce; </span></li>
                 <li><span class="iconfont">&#xe64a;</span>我的订单</li>
                 <li><span class="iconfont lineH">&#xe66a;</span>我的收藏</li>
@@ -69,7 +69,27 @@
                     <input type="text" placeholder="NBA STYLE" class="input">
                     <a href="javascript:;"><span class="iconfont">&#xe65b;</span></a>
                 </form>
-                <div class="cart iconfont">&#xe64d;</div>
+                <div class="go-cart">
+                   <a href="cart.html">
+                       <span class="iconfont"> &#xe64d;</span>
+                       <span class="goods-num-tip"></span>
+                   </a>
+                   <div class="mini-cart-wrapper">
+                       <div class="rich-cart">
+                           <div class="goods-list">
+                               <div id="goods-item"></div>
+                               <div class="activity-item">
+                                   <label class="activity-name">免运费</label>
+                                   <h3 class="activity-content">全场满 ￥399免运费</h3>
+                               </div>
+                           </div>
+                           <div class="go-full-cart">
+                               <div><a href="cart.html">去购物车结算</a></div>
+                           </div>
+                       </div>
+                       <div class="cart-null"></div>
+                   </div>
+                </div>
             </div>
         </div>
     </header>
@@ -80,7 +100,7 @@
                 <li><a href="" class="borderBottom">新品到着</a></li>
                 <li><a href="" class="borderBottom">品牌一览</a></li>
                 <li class="containThird"><!--三级菜单-->
-                    <a href="" class="borderBottom">服饰</a>
+                    <a href="jacket.html" class="borderBottom">服饰</a>
                     <div class="third" style="display:none">
                         <div class="center-content">
                             <dl class="category-list">
@@ -784,7 +804,8 @@
 <script>
     seajs.config({
         alias: {
-            "jQuery": "./../module/jquery-1.11.3.js"
+            "jQuery": "./../module/jquery-1.11.3.js",
+            "cookie" : "./../module/jquery.cookie"
         }
     });
     seajs.use("./js/chrismas.js");

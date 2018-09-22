@@ -1,0 +1,138 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0;}
+body { background:#fff; color:#555; font-size:14px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#555; text-decoration:none; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;} 
+.clearfix:after {content: ""; display: block; height:0; clear:both; visibility: hidden;}
+body {
+    font-family: arial, SimHei
+}
+img{border:0 none;}
+@font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.eot');
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+  url('iconfont.woff') format('woff'),
+  url('iconfont.ttf') format('truetype'),
+  url('iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*footer*/
+.yoho-footer{font-size: 12px;}
+.yoho-footer * {box-sizing: border-box;}
+.left{float: left;}
+.right{float: right;}
+.yoho-footer .footerbottom {width: 100%;}
+.yoho-footer .promise {padding: 20px 0 10px;background: #000;}
+.center-content {width: 1150px;margin-left: auto;margin-right: auto;}
+.yoho-footer .promise .left {margin-right: 60px;line-height: 30px;font-size: 12px;font-weight: 700;}
+.yoho-footer .promise .left .iconfont {display: inline-block;font-weight: 400;font-size: 27px;vertical-align: middle;margin-right: 5px;}
+.yoho-footer .rgbf {color: #fff;}
+.yoho-footer .red {color: #e01;}
+.yoho-footer .subscribe {border: 1px solid #262626;width: 240px;}
+.yoho-footer .subscribe input {width: 180px;height: 32px;padding: 0 10px;line-height: 32px;border: none;margin: 0;background: #000;}
+.yoho-footer .rgb6 {color: #666;}
+.yoho-footer .subscribe a {display: block;float: right;margin-right: 20px;font-size: 20px;line-height: 28px;opacity: .5;}
+.yoho-footer .footer-help {background: #000;font-size: 12px;overflow: hidden;}
+.yoho-footer .footer-help>div {padding: 15px 0;border-top: 1px solid #262626;}
+.yoho-footer .footer-help ul {width: 110%;}
+.yoho-footer .footer-help li {width: 180px;}
+.yoho-footer .footer-help p {line-height: 24px;}
+.yoho-footer .footer-help p span {color: #fff;}
+.yoho-footer .footer-help p a {color: #666;}
+.yoho-footer .footer-link {background: #000;padding: 10px 0 30px;font-size: 12px;}
+.yoho-footer .footer-link .right-flag {margin-top: 3px;}
+.yoho-footer .footer-link .about-us {line-height: 20px;color: #666;margin-left: 10px;}
+.yoho-footer .footer-link .about-us a {color: #666;}
+.yoho-footer .footer-link .about-us span {padding: 0 10px;}
+/*回到顶部*/
+#return-top{width:60px;height:60px;position: fixed;right: 20px; text-align: center;line-height: 60px;color: #fff;bottom: 20px;cursor: pointer;z-index: 4;background: #000;opacity: .5;display: none;}
+#return-top span{font-size: 20px;}
+#return-top:hover{opacity: .8}
+/*页头*/
+.simple-header {height: 66px;margin: 0 0 20px;border-bottom: 2px solid #222;}
+.simple-header .header-inner {width: 990px;height: 100%;margin: 0 auto;}
+.simple-header .logo {float: left;line-height: 66px;font-size: 0;}
+.simple-header .logo img {vertical-align: middle;}
+.simple-header .header-tool {float: right;line-height: 66px;font-size: 0;}
+.simple-header .header-tool li, .simple-header .header-tool li a, .simple-header .header-tool li span {font-size: 12px;vertical-align: middle;}
+.simple-header .header-tool li {display: inline-block;padding: 0 10px;line-height: 28px;}
+.passport-page {margin-right: auto;margin-left: auto;width: 1150px;}
+.passport-cover {float: left;margin: 107px 0;width: 575px;}
+.passport-cover .cover-content {padding: 50px 0;width: 100%;height: 318px;border-right: 1px solid #dfdfdf;}
+.passport-cover .cover-img {display: block;margin: 0 auto;margin-top: 50px;width: 252px;height: 190px;}
+/*注册*/
+.passport-page .content {float: left;margin-top: 107px;padding-left: 85px;}
+.login-page .content {float: left;margin-top: 107px;padding-left: 85px;}
+.hide{display: none !important;}
+.content .content-ul{width:270px;}
+.content .content-ul li{width:100%;margin-bottom: 25px;}
+.content .li1{width: 270px;height: 46px;margin-bottom: 25px;background-color: #fff;position: relative;overflow: hidden;}
+.content .li1 .saoma{width:120px;background: url(../images-login/ma_03.gif) no-repeat center;height:30px;position: absolute;top:0;right:-80px;display: none;}
+.content .li1 .ma1{width:40px;background: url(../images-login/ma_04.jpg)no-repeat ;height:40px;position: absolute;top:0;right:0;cursor: pointer;}
+.content .li2{height:20px;position: relative;}
+.content .vip-login{margin-bottom: 25px;position: relative;float: left;font-size: 20px;}
+.content .country-code {color: #b9b9b9;cursor: pointer;float: right;}
+.content .country-code .iconfont {font-size: 12px;}
+.country-list {position: absolute;top: 20px;right: 0;z-index: 1;border: 1px solid #000;border-radius: 5px;background: #fff;padding: 5px 0px;display: none;}
+.country-list li{color:#000;height:20px;line-height:20px;margin: 0 !important;padding: 0 14px;box-sizing: border-box;}
+.country-list li:hover{background: #cec8c8;}
+.content .li3{position: relative;}
+.content .login-type{    width: 100%;height: 27px;font-size: 14px;}
+.general,.phone{width: 146px;height: 27px;text-align: center;line-height: 27px;border-radius: 13px;position: absolute;cursor: pointer;top:0px;}
+.content .login-type .action{background: #000;z-index: 20;color:#fff;}
+.content .general{left:0px;}
+.content .phone{right:0px;}
+.password-login{position: relative;}
+.passport-page .input {width: 268px;height: 43px;border: 1px solid #dbdbdb;color: #9a9a9a;color: rgba(0,0,0,.5);text-indent: 10px;font-size: 16px;line-height: 1.2;line-height: 43px;}
+.password-login .error{position: absolute;top: 8px;left: 285px;padding: 6px 0;color: red;white-space: nowrap;font-size: 14px;display: none;}
+.password-login .daxie{position: absolute;top: 8px;left: 278px;padding: 0 20px;height: 27px;border: #ffe57d;background: #fff6d2;color: #666;white-space: nowrap;line-height: 30px;display: none;}
+.desktop-login .btn{display: block;width: 100%;height: 46px;background-color: #ff1901;color: #fff;text-align: center;letter-spacing: 10px;font-size: 20px;line-height: 46px;cursor: pointer;} 
+.remeber-me{cursor:pointer;}
+.content .other .forget{float: right;}
+.content .other .forget .forget-password{color: #b9b9b9;}
+.content .other .forget .fast-reg{color: #ff1901;}
+.content .icon-box a{ display: table-cell;float: left;width:45px;height:45px;}
+.content .icon-box .a1{background: url(../images-login/icon.jpg)no-repeat }
+.content .icon-box .a2{background: url(../images-login/icon.jpg)no-repeat -46px 0;}
+.content .icon-box .a3{background: url(../images-login/icon.jpg)no-repeat -91px 0;}
+.content .icon-box .a4{background: url(../images-login/icon.jpg)no-repeat -136px 0;}
+.content .icon-box .a5{background: url(../images-login/icon.jpg)no-repeat -181px 0;}
+.content .icon-box .a6{background: url(../images-login/icon.jpg)no-repeat -226px 0;}
+.content .mobile-login{    margin-bottom: 40px!important;font-weight: 700;font-size: 16px;color:#000; text-align: center;}
+.content .show-ewm{height:148px;width:100%;position: relative;    }
+.content .show-ewm .left{width:136px;height:136px;background: url(../images-login/ma2_11.jpg)center;top:0;left:67px;position: absolute;}
+.content .show-ewm .right{width:165px;height:148px;background: url(../images-login/ma2_08.jpg)center;display: none;position: absolute;top:-10px;right:-40px;}
+.content .sao-ewm{position: relative;margin-left: 45px;margin-top: 25px;}
+.content .sao-ewm .iconfont{width:30px;height:30px;font-size: 30px;color:#000; position: absolute;top:-5px;left:0;}
+.content .sao-ewm p{margin-left:35px;color: #9b9b9b;font-size: 14px;line-height: 15px;}
+.content .download-link{font-size: 13px;color:red;text-align: center;margin-top: 25px;width:100%;display: block;}
+.content #box{display: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

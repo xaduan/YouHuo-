@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>新用户注册</title>
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+    <!--页头-->
+    <div class="simple-header">
+        <div class="header-inner clearfix">
+            <h1 class="logo">
+               <a href="index.html">
+                   <img src="images-login/logo_e.png" alt="">
+               </a>
+           </h1>
+            <ul class="header-tool clearfix">
+                <li>
+                    <span>Hi~</span>&nbsp;
+                    <a href="login.html">[请登录]</a>&nbsp;
+                    <a href="register.html">[免费注册]</a>
+                </li>
+                <li class="tool-options">
+                    <a href="javascript:;">MY有货</a>
+                </li>
+                <li class="tool-options">
+                    <a href="javascript:;">订单中心</a>
+                </li>
+                <li class="tool-options">
+                    <a href="javascript:;">帮助中心</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--内容-->
+      <div class="order-ensure-page shop-cart yoho-page clearfix">
+          <div id="cart-page" class="order-edit order-cart">
+              <div class="order-title"></div>
+              <div class="cartnew-tips">
+                  <div id="tipsbox" class="tipsbox">
+                      <a href="javascript:;"></a>
+                      <strong>温馨提示：</strong>1. 选购单中的商品不保留库存，请及时结算。 2. 商品的价格、相关活动信息及库存以订单提交时为准。                    
+                  </div>
+              </div>
+              <div class="order-pay">
+                 
+                  <!--购物车列表-->
+                  <div class="pay-wapper">
+                      <table>
+                      <thead>
+                          <tr>
+                              <th style="width:40%;">商品信息</th>
+                              <th style="width:13%;">单价（元）</th>
+                              <th style="width:7%;">返有货币</th>
+                              <th style="width:10%;">数量</th>
+                              <th style="width:10%;">小计（元）</th>
+                              <th style="width:20%;">操作</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          
+                      </tbody>
+                      <tfoot>
+                          <tr class="pre-sell-box">
+                              <td class="cart-empty" colspan="6">
+                                  <a href="jacket.html">继续逛逛</a>
+                              </td>
+                          </tr>
+                      </tfoot>
+                      
+                  </table>
+                  </div>
+                  <div class="salesPromotion">
+                      <p>
+                          <b>商品打折</b>【运动风尚】满￥199享78折 
+                      </p>
+                      <span>
+                          <i class="iconfont">&#xe653;</i> 已参与
+                      </span>
+                  </div>
+                  <div class="salesPromotion">
+                      <p>
+                          <b>免运费</b>满￥299免运费 
+                      </p>
+                      <span>
+                          <i class="iconfont">&#xe653;</i> 已参与
+                      </span>
+                  </div>
+                  <!--结算-->
+                  <div class="cartnew-sum">
+                      <div class="left batch_div">
+                          <input type="checkbox" checked="checked" id="allS">
+                          <span>全选</span>
+                          <a href="javascript:;" class="delAll">批量删除</a>
+                      </div>
+                      <div class="right">
+                          <p>
+                              商品总价（不含运费）:<strong> ¥0.00 </strong> 元
+                          </p>
+                      </div>
+                  </div>
+                  <div id="payDiv" class="cartnew-submit">
+                      <a href="javascript:;" class="again">
+                          <span class="iconfont">&#xe651;</span>&nbsp;再逛逛
+                      </a>
+                      <a href="javascript:;" class="pay">
+                         去结算&nbsp;<span class="iconfont">&#xe62c;</span>
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <!--商品推荐-->
+          <div class="histroy givePoint">
+              <div class="cartnew-goodslist cartnew-goodslist-open">
+                  <div class="title">
+                      <h2>
+                          <i class="icon-minus"></i>
+                          <i class="icon-add none"></i>
+                          为您优选
+                      </h2>
+                      <div class="right">
+                          <span class="pageprev btn_type1">
+                              <a href="javascript:;" title="上一页">
+                                  <span></span>
+                              </a>
+                          </span>
+                          <span class="pagenext btn_type1">
+                              <a href="javascript:;" title="下一页">
+                                  <span></span>
+                              </a>
+                          </span>
+                      </div>
+                  </div>
+                  <div class="main">
+                      <ul>
+                         
+                          <li>
+                              <div class="list">
+                                  <div class="thumb">
+                                      <a href="javascript:;">
+                                          <img src="images-jacket/1-1.jpg" alt="">
+                                      </a>
+                                  </div>
+                                  <div class="name">
+                                  <a href="javascript:;">
+                                      <h3>【阿信亲身演绎】STAYREAL X 海绵宝宝 小伙伴海绵TEE</h3>
+                                  </a>
+                              </div>
+                              </div>
+                              
+                              <div class="price">¥359.00</div>
+                              <div class="op">
+                                  <a href="javascript:;" class="btn_view_s"></a>
+                              </div>
+                          </li>
+                          
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      <!--是否删除商品-->
+      <div id="wrap" style="background:#000;opacity:0.5;position:absolute;top:0;left:0"></div>
+      <div class="yoho-dialog confirm-dialog">
+          <span class="close">
+              <i>×</i>
+          </span>
+          <div class="content">
+              <div class="remove">
+                  <span></span>&nbsp;&nbsp;删除商品
+              </div>
+              <p>确定从购物车中删除此商品？</p>
+          </div>
+          <div class="btns">
+              <span class="btn confirm-sure" id="sure">确定</span>
+              <span class="btn confirm-cancel" id="cancel">取消</span>
+          </div>
+      </div>
+      <div class="yoho-dialog2 confirm-dialog2">
+          <span class="close">
+              <i>×</i>
+          </span>
+          <div class="content">
+              <div class="remove">
+                  <span></span>&nbsp;&nbsp;删除商品
+              </div>
+              <p>您确定要删除全部商品吗？</p>
+          </div>
+          <div class="btns">
+              <span class="btn confirm-sure" id="sure">确定</span>
+              <span class="btn confirm-cancel" id="cancel">取消</span>
+          </div>
+      </div>
+ 
+    <!--底部-->
+    <footer class="yoho-footer">
+        <div class="footerbottom">
+            <div class="promise">
+                <div class="center-content clearfix">
+                    <div class="left">
+                        <span class="iconfont rgbf">&#xe69f;</span>
+                        <span class="red">100%</span>
+                        <span class="rgbf">品牌正品</span>
+                    </div>
+                    <div class="left">
+                        <span class="iconfont rgbf">&#xe69c;</span>
+                        <span class="red">7天</span>
+                        <span class="rgbf">无理由退换货</span>
+                    </div>
+                    <div class="left">
+                        <span class="iconfont rgbf">&#xe7e3;</span>
+                        <a href="javascript:;" target="_blank">
+                            <span class="red">便捷</span>
+                            <span class="rgbf">在线客服</span>
+                        </a>
+                    </div>
+                    <div class="right subscribe footer-right">
+                        <input id="subscriber-box" class="rgb6 top" name="subscriberBox" value="订阅我们的邮件">
+                        <a id="subscriber-btn" href="javascript:void(0);" class="iconfont rgbf">&#xe611;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-help">
+                <div class="center-content clearfix">
+                    <div class="left">
+                        <ul class="clearfix">
+                            <li class="left">
+                                <p>
+                                    <span>新手指南</span>
+                                </p>
+                                <p>
+                                    <a href="javascript:;" target="_blank">注册登录</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;" target="_blank">选购商品</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;" target="_blank">订单支付</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;" target="_blank">收货退款</a>
+                                </p>
+                            </li>
+                            <li class="left">
+                                <p>
+                                    <span>会员中心</span>
+                                </p>
+                                <p>
+                                    <a href="javascript:;" target="_blank">有货币</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;" target="_blank">会员制度</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;" target="_blank">账户管理</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;" target="_blank">密码管理</a>
+                                </p>
+                            </li>
+                            <li class="left">
+                                <p>
+                                    <span>购物指南</span>
+                                </p>
+                                <p>
+                                    <a href="javascript:;" target="_blank">全球购专区</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;" target="_blank">尺码选择</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;" target="_blank">发票</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;" target="_blank">商品咨询</a>
+                                </p>
+                            </li>
+                            <li class="left">
+                                <p>
+                                    <span>支付方式</span>
+                                </p>
+                                <p>
+                                    <a href="javascript:;" target="_blank">在线支付</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;" target="_blank">货到付款</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;" target="_blank">优惠券</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;" target="_blank">有货币支付</a>
+                                </p>
+                            </li>
+                            <li class="left">
+                                <p>
+                                    <span>配送方式</span>
+                                </p>
+                                <p>
+                                    <a href="javascript:;" target="_blank">配送时间</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;" target="_blank">配送范围</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;" target="_blank">顺丰速运</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;" target="_blank">商品验收与签收</a>
+                                </p>
+                            </li>
+                            <li class="left">
+                                <p>
+                                    <span>售后服务</span>
+                                </p>
+                                <p>
+                                    <a href="javascript:;" target="_blank">退换货政策</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;" target="_blank">退换货流程</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;" target="_blank">退款方式与时效</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;" target="_blank">投诉与建议</a>
+                                </p>
+                            </li>
+                            <li class="left">
+                                <p>
+                                    <span>APP常见问题</span>
+                                </p>
+                                <p>
+                                    <a href="javascript:;" target="_blank">IPhone版</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;" target="_blank">Android版</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;" target="_blank">wap版</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:;" target="_blank">IPAD版</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-link">
+                <div class="center-content clearfix">
+                    <div class="left right-flag">
+                        <a class="govicon" href="javascript:;" target="_blank" rel="nofollow">
+                            <div class="govimg"></div>
+                        </a>
+                        <a href="javascript:;" target="_blank" rel="nofollow">
+                            <img src="images/credit-flag3.png">
+                        </a>
+                        <a href="javascript:;" target="_blank" rel="nofollow">
+                            <img src="images/isc2.png">
+                        </a>
+                    </div>
+                    <div class="left about-us">
+                        <p>
+                            <a href="index.html">返回首页</a>
+                            <span>|</span>
+                            <a href="javascript:;">YOHO!BUY 有货</a>
+                            <span>|</span>
+                            <a href="javascript:;">新力传媒</a>
+                            <span>|</span>
+                            <a href="javascript:;">联系我们</a>
+                            <span>|</span>
+                            <a href="javascript:;">商家入驻</a>
+                            <span>|</span>
+                            <a href="javascript:;">隐私条款</a>
+                            <span>|</span>
+                            <a href="javascript:;">友情链接</a>
+                        </p>
+                        <p>
+                            CopyRight © 2007-2016 南京新与力文化传播有限公司
+                            <a class="rbg6" href="javascript:;" target="_blank">苏ICP备09011225号</a> NewPower Co. 版权所有 经营许可证编号：苏B2-20120395
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--回到顶部-->
+    <div id="return-top">
+        <span class="iconfont">&#xe612;</span>
+    </div>
+</body>
+<script src="module/sea.js"></script>
+<script>
+    seajs.config({
+        alias: {
+            "jq": "./../module/jquery-1.11.3",
+            "cookie": "./../module/jquery.cookie"
+        }
+    });
+    seajs.use(["./js/cart.js"]);
+</script>
+
+</html>

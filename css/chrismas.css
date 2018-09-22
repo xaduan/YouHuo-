@@ -79,6 +79,135 @@ img{border:0 none;}
 #wrapNavContent .third .show-detail {box-sizing: border-box;padding-left: 19px;padding-right: 19px;width: 337px;height: 250px;float: right;}
 #wrapNavContent .third .show-detail .title {width: 100%;margin-top: 40px;text-align: center;font-size: 14px;color: #000;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;display: block;}
 #wrapNavContent .third .center-content .hot{color:#e01;}
+#docHead #docHeadWrap .go-cart {
+    width: 30px;
+    height: 30px;
+    float: right;
+    cursor: pointer;
+    position: relative;
+}
+#docHead #docHeadWrap .go-cart .iconfont {
+    font-size: 26px;
+    color: #3a3a3a;
+}
+#docHead #docHeadWrap .go-cart .goods-num-tip {
+    position: absolute;
+    background: url(../images/hongdian.png) no-repeat;
+    width: 27px;
+    height: 20px;
+    top: -10px;
+    right: -15px;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    display: none;
+}
+
+#docHead #docHeadWrap .mini-cart-wrapper {
+    position: absolute;
+    top: 30px;
+    right: -14px;
+    width: 378px;
+    z-index: 1000;
+    background: #f8f8f8;
+    display: none;
+}
+#docHead #docHeadWrap .mini-cart-wrapper .rich-cart {
+    background: #f8f8f8;
+   
+}
+#docHead #docHeadWrap .mini-cart-wrapper .goods-list {
+    padding-top: 20px;
+    margin-bottom: 15px;
+    max-height: 444px;
+    overflow-x: hidden;
+}
+#docHead #docHeadWrap .mini-cart-wrapper .cart-null{
+    width:378px;height:480px;background: url(../images-vans/cart-null.jpg)center;
+    display: none;
+}
+
+
+
+
+#docHead #docHeadWrap .mini-cart-wrapper .goods-item {
+    padding: 0 0 18px 18px;
+}
+#docHead #docHeadWrap .mini-cart-wrapper .goods-item .goods-img {
+    width: 60px;
+}
+#docHead #docHeadWrap .mini-cart-wrapper .goods-item .goods-img img{
+    height:62px;
+    width:auto;
+}
+#docHead #docHeadWrap .mini-cart-wrapper .goods-item > div {
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+}
+#docHead #docHeadWrap .mini-cart-wrapper .goods-item .goods-info {
+    width: 170px;
+    color: #b0b0b0;
+}
+#docHead #docHeadWrap .mini-cart-wrapper .goods-item .title {
+    width: 170px;
+    height: 14px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#docHead #docHeadWrap .mini-cart-wrapper .goods-item p {
+    margin-bottom: 12px;
+}
+#docHead #docHeadWrap .mini-cart-wrapper .goods-item .title > a {
+    color: #666;
+}
+#docHead #docHeadWrap .mini-cart-wrapper .goods-item .goods-info span {
+    display: inline-block;
+    width: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: bottom;
+}
+#docHead #docHeadWrap .mini-cart-wrapper .goods-item .goods-price {
+    min-width: 90px;
+    text-align: right;
+}
+#docHead #docHeadWrap .mini-cart-wrapper .activity-item {
+    font-size: 14px;
+    margin-bottom: 8px;
+    padding-left: 18px;
+    line-height: 18px;
+}
+#docHead #docHeadWrap .mini-cart-wrapper .activity-item label {
+    width: 60px;
+    height: 18px;
+    background-color: #3a3a3a;
+    color: #fff;
+    text-align: center;
+    margin-right: 13px;
+    vertical-align: top;
+    display: inline-block;
+}
+#docHead #docHeadWrap .mini-cart-wrapper .activity-item h3 {
+    width: 250px;
+    color: #3a3a3a;
+    font-size: 12px;
+    word-break: break-all;
+    display: inline-block;
+}
+#docHead #docHeadWrap .mini-cart-wrapper .go-full-cart {
+    padding: 0 18px;
+}
+#docHead #docHeadWrap .mini-cart-wrapper .go-full-cart > div {
+    height: 61px;
+    line-height: 61px;
+    border-top: 1px solid #dcdcdc;
+    text-align: center;
+}
 /*footer*/
 .yoho-footer{font-size: 12px;}
 .yoho-footer * {box-sizing: border-box;}

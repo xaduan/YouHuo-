@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>夹克男生上衣|YOHO!BUY 有货 100%正品保证</title>
     <link rel="stylesheet" href="css/jacket.css">
-    <script src="module/sea.js"></script>
+   
 </head>
 
 <body>
@@ -23,7 +23,7 @@
                 </ul>
             </div>
             <ul id="topNavRight">
-                <li>Hi~[<a href="javascript:;" class="login">请登录</a>][<a href="#" class="register">免费注册</a>]</li>
+                <li>Hi~[<a href="login.html" class="login">请登录</a>][<a href="register.html" class="register">免费注册</a>]</li>
                 <li class="hoverBg">MY有货<span class="iconfont"> &#xe6ce; </span></li>
                 <li><span class="iconfont">&#xe64a;</span>我的订单</li>
                 <li><span class="iconfont lineH">&#xe66a;</span>我的收藏</li>
@@ -70,7 +70,27 @@
                     <input type="text" placeholder="NBA STYLE" class="input">
                     <a href="javascript:;"><span class="iconfont">&#xe65b;</span></a>
                 </form>
-                <div class="cart iconfont">&#xe64d;</div>
+                <div class="go-cart">
+                   <a href="cart.html">
+                       <span class="iconfont"> &#xe64d;</span>
+                       <span class="goods-num-tip"></span>
+                   </a>
+                   <div class="mini-cart-wrapper">
+                       <div class="rich-cart">
+                           <div class="goods-list">
+                               <div id="goods-item"></div>
+                               <div class="activity-item">
+                                   <label class="activity-name">免运费</label>
+                                   <h3 class="activity-content">全场满 ￥399免运费</h3>
+                               </div>
+                           </div>
+                           <div class="go-full-cart">
+                               <div><a href="cart.html">去购物车结算</a></div>
+                           </div>
+                       </div>
+                       <div class="cart-null"></div>
+                   </div>
+                </div>
             </div>
         </div>
     </header>
@@ -1387,16 +1407,16 @@
                     </a>
                     <div class="pager-wrap">
                         <div class="page-count">
-                            <span id="count-per-page">60<i class="iconfont">&#xe6e5;</i></span>每页
+                            <span id="count-per-page">40<i class="iconfont">&#xe6e5;</i></span>每页
                             <ul>
+                                <li>
+                                    <a href="javascript:;">40</a>
+                                </li>
                                 <li>
                                     <a href="javascript:;">60</a>
                                 </li>
                                 <li>
                                     <a href="javascript:;">100</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">200</a>
                                 </li>
                             </ul>
                         </div>
@@ -1404,7 +1424,7 @@
                             <a href="javascript:;">
                                 <span class="iconfont"></span>
                             </a>
-                            <span>
+                            <span class="span">
                                 <i>1</i>/67
                             </span>
                             <a href="javascript:;">
@@ -1413,17 +1433,49 @@
                         </p>
                     </div>
                 </div>
+                <!--商品列表项-->
+                <div class="goods-container clearfix">
+                   <div id="goodsBox"></div>
+                    <div class="good-item-wrapper">
+                        <div class="left">
+                            <div class="good-detail-img">
+                            <a href="details.html" class="good-thumb">
+                                <img src="">
+                            </a>
+                        </div> 
+                        <div class="good-detail-text">
+                            <a href="javascript:;" id="t"></a>
+                            <p class="brand">
+                                <a href="javascript:;"></a>
+                            </p>
+                            <p class="price"></p>
+                        </div>
+                        </div>
+                        <div class="right">
+                            <ul>
+                                <li>
+                                    <a href="details.html">
+                                        <img src="images-jacket/1.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="details.html">
+                                        <img src="images-jacket/1.jpg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!--页脚-->
+                <div class="foot-pager clearfix">
+                    <span class="total">1 - 59 / 共1574件商品</span>
+                    <div id="Pagination"></div>
+                </div> 
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
 
     <footer class="yoho-footer">
         <div class="footerbottom">
@@ -1624,12 +1676,17 @@
     </div>
     <!--回到顶部-->
 </body>
+
+<script src="module/sea.js"></script>
 <script>
     seajs.config({
         alias: {
-            "jQuery": "./../module/jquery-1.11.3.js"
+            "jq" : "./../module/jquery-1.11.3",
+            "page" : "./../module/jquery.pagination",
+            "cookie" : "./../module/jquery.cookie"
         }
     });
+    //seajs.use(["./js/jacket.js"]);
     seajs.use("./js/jacket.js");
 </script>
 

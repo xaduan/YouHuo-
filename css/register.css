@@ -1,0 +1,140 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0;}
+body { background:#fff; color:#555; font-size:14px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#555; text-decoration:none; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;} 
+.clearfix:after {content: ""; display: block; height:0; clear:both; visibility: hidden;}
+body {
+    font-family: arial, SimHei
+}
+img{border:0 none;}
+@font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.eot');
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+  url('iconfont.woff') format('woff'),
+  url('iconfont.ttf') format('truetype'),
+  url('iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*footer*/
+.yoho-footer{font-size: 12px;}
+.yoho-footer * {box-sizing: border-box;}
+.left{float: left;}
+.right{float: right;}
+.yoho-footer .footerbottom {width: 100%;}
+.yoho-footer .promise {padding: 20px 0 10px;background: #000;}
+.center-content {width: 1150px;margin-left: auto;margin-right: auto;}
+.yoho-footer .promise .left {margin-right: 60px;line-height: 30px;font-size: 12px;font-weight: 700;}
+.yoho-footer .promise .left .iconfont {display: inline-block;font-weight: 400;font-size: 27px;vertical-align: middle;margin-right: 5px;}
+.yoho-footer .rgbf {color: #fff;}
+.yoho-footer .red {color: #e01;}
+.yoho-footer .subscribe {border: 1px solid #262626;width: 240px;}
+.yoho-footer .subscribe input {width: 180px;height: 32px;padding: 0 10px;line-height: 32px;border: none;margin: 0;background: #000;}
+.yoho-footer .rgb6 {color: #666;}
+.yoho-footer .subscribe a {display: block;float: right;margin-right: 20px;font-size: 20px;line-height: 28px;opacity: .5;}
+.yoho-footer .footer-help {background: #000;font-size: 12px;overflow: hidden;}
+.yoho-footer .footer-help>div {padding: 15px 0;border-top: 1px solid #262626;}
+.yoho-footer .footer-help ul {width: 110%;}
+.yoho-footer .footer-help li {width: 180px;}
+.yoho-footer .footer-help p {line-height: 24px;}
+.yoho-footer .footer-help p span {color: #fff;}
+.yoho-footer .footer-help p a {color: #666;}
+.yoho-footer .footer-link {background: #000;padding: 10px 0 30px;font-size: 12px;}
+.yoho-footer .footer-link .right-flag {margin-top: 3px;}
+.yoho-footer .footer-link .about-us {line-height: 20px;color: #666;margin-left: 10px;}
+.yoho-footer .footer-link .about-us a {color: #666;}
+.yoho-footer .footer-link .about-us span {padding: 0 10px;}
+/*回到顶部*/
+#return-top{width:60px;height:60px;position: fixed;right: 20px; text-align: center;line-height: 60px;color: #fff;bottom: 20px;cursor: pointer;z-index: 4;background: #000;opacity: .5;display: none;}
+#return-top span{font-size: 20px;}
+#return-top:hover{opacity: .8}
+/*页头*/
+.simple-header {height: 66px;margin: 0 0 20px;border-bottom: 2px solid #222;}
+.simple-header .header-inner {width: 990px;height: 100%;margin: 0 auto;}
+.simple-header .logo {float: left;line-height: 66px;font-size: 0;}
+.simple-header .logo img {vertical-align: middle;}
+.simple-header .header-tool {float: right;line-height: 66px;font-size: 0;}
+.simple-header .header-tool li, .simple-header .header-tool li a, .simple-header .header-tool li span {font-size: 12px;vertical-align: middle;}
+.simple-header .header-tool li {display: inline-block;padding: 0 10px;line-height: 28px;}
+.passport-page {margin-right: auto;margin-left: auto;width: 1150px;}
+.passport-cover {float: left;margin: 107px 0;width: 575px;}
+.passport-cover .cover-content {padding: 50px 0;width: 100%;height: 318px;border-right: 1px solid #dfdfdf;}
+.passport-cover .cover-img {display: block;margin: 0 auto;margin-top: 50px;width: 252px;height: 190px;}
+/*注册*/
+.passport-page .content {float: left;margin-top: 107px;padding-left: 85px;}
+.register-page {color: #b9b9b9;font-size: 14px;}
+.register-page li {position: relative;margin-bottom: 25px;width: 270px;}
+.register-page li #error{display: none;position: absolute;z-index: 1000;padding: 0 10px;height: 30px;border: 1px solid #ffbdbe;background-color: #ffebeb;color: red;line-height: 30px;top:-40px;left:59px;}
+.register-page li #error b{position: absolute;display: block;width: 17px;height: 9px;top:30px;left:20px;background: url(../images-login/sanjiao.png);}
+.register-page li #error span{width:100%;}
+
+
+.register-page li .region {padding: 4px 0;width: 132px;height: 30px;border-color: #c1c1c1;color: #9a9a9a;font-size: 16px;font-family: 黑体;}
+option {font-weight: normal;display: block;white-space: pre;min-height: 1.2em;padding: 0px 2px 1px;}
+.register-page li .country-code {display: block;float: left;width: 58px;height: 43px;border: 1px solid #dbdbdb;border-right: 0;text-align: center;white-space: nowrap;font-size: 16px;line-height: 43px;}
+.register-page li .input.phone-num {position: absolute;top: 0;right: 0;display: block;width: 209px;}
+.register-page li .input {padding: 0;width: 268px;height: 43px;border: 1px solid #dbdbdb;color: #9a9a9a;text-indent: 10px;font-size: 16px;line-height: 43px;}
+.passport-page .input {width: 268px;height: 43px;border: 1px solid #dbdbdb;color: #9a9a9a;color: rgba(0,0,0,.5);text-indent: 10px;font-size: 16px;line-height: 1.2;line-height: 43px;}
+.register-page li input, .register-page li select { outline: none;}
+.register-page li.w330 {width: 330px;}
+.register-page li {position: relative;margin-bottom: 25px;width: 270px;}
+.img-check {margin-top: 25px;margin-bottom: 25px;width: 270px;}
+.img-check-header {font-size: 13px;line-height: 13px;text-align: left;margin-bottom: 10px;color: #b0b0b0;}
+.img-check-pics {display: inline-block;width: 270px;height: 62px;padding: 0;position: relative;}
+.register-page li {position: relative;margin-bottom: 25px;width: 270px;}
+.img-check-pics li {float: left;background-size: 240px 240px;background: #fff no-repeat;width: 60px!important;height: 60px!important;border: 1px solid #e0e0e0;margin-right: 7px;cursor: pointer;}
+.img-check-main .img-check-tip {display: none;position: absolute;left: 0;top: 90px;font-size: 13px;line-height: 19px;height: 19px;color: red;}
+.img-check-main .img-check-tip i {font-size: 13px!important;}
+.register-page li .input.captcha, .register-page li .input.msg-captcha {float: left;width: 160px;}
+.register-page li .input {padding: 0;width: 268px;height: 43px;border: 1px solid #dbdbdb;color: #9a9a9a;text-indent: 10px;font-size: 16px;line-height: 43px;}
+.register-page li .btn {padding: 0;height: 45px;border: none;color: #fff;text-align: center;font-family: 黑体;line-height: 45px;
+}
+.register-page li .send-captcha {position: absolute;top: 0;right: 0;width: 100px;background: #9a9a9a;text-indent: 0;letter-spacing: 0;font-size: 12px;}
+.passport-page .btn {display: block;cursor: default;}
+.register-page li .pwd-intensity-container {overflow: hidden;margin-top: 5px;width: 270px;height: auto;text-align: right;}
+.passport-page .pwd-intensity-container {padding-top: 5px;width: 270px;text-align: right;}
+.register-page li .pwd-intensity-container .pwd-intensity {padding: 1px 10px;height: 15px;background-color: #e8e8e8;text-align: center;font-size: 12px;}
+.passport-page .pwd-tips {position: absolute;top: -10px;left: 285px;padding-top: 7px;width: 160px!important;height: 72px;font-size: 12px;background:#fff;display: none;}
+.passport-page .pwd-tips>div {position: relative;margin-left: 15px;padding-left: 15px;height: 22px;color: #b9b9b9;font-size: 12px;line-height: 22px;}
+.passport-page .pwd-tips>div i {position: absolute;top: 35%;left: -2px;margin: -7px 0 0;width: 14px;height: 14px;font-size: 12px;color: #0080ff;}
+.register-page li .link {color: #ff1901;text-decoration: underline;}
+.register-page li.items-container{text-align: right;white-space: nowrap;font-size: 13px;}
+.register-page li .register-btn.disable {background: #555;}
+.passport-page .btn.disable {background-color: #555;cursor: default;}
+.register-page li .register-btn {width: 270px;background: #ff1901; font-weight: 700;font-size: 20px;}
+.register-page li.quick-login-container {width: 270px;}
+.register-page li {position: relative;margin-bottom: 25px;width: 270px;}
+.Congratulations{margin-top: 40%; display: none;}
+.Congratulations .text{line-height: 60px;font-size: 16px;color:#000;}
+.Congratulations .text .iconfont,.Congratulations .text .time{color:#ff1901;font-size: 25px;}
+.Congratulations .text .gongxi{font-size: 25px;}
+.Congratulations .btn{width:270px;line-height:40px;font-size: 14px;text-align: center;background: #ff1901;color:#fff;border: none;margin-left: 15%;margin-top:10%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
